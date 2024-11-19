@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+  <metadata>
+    <description>Complete Kernel32 API toolkit for .NET Framework developers.</description>
+    <icon>images\nexspherehub.png</icon>
+    
+    <title>NexSphere Hub • PInvoke.Kernel</title>
+    <version>1.0.0.0</version>
+    <id>NexSphereHub.PInvoke.Kernel</id>
+
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">BSD-3-Clause</license>
+    <readme>docs\README.md</readme>
+    
+    <copyright>Copyright © 2024 NexSphere Hub</copyright>
+    <authors>NexSphere Hub</authors>
+    <owners>eduardobcosta</owners>
+
+    <repository type="git" branch="main" url="https://github.com/nexspherehub/pinvoke.kernel.git" />
+    <projectUrl>https://github.com/nexspherehub/pinvoke.kernel</projectUrl>
+    <tags>windows-api windows win32 winapi pinvoke kernel kernel32</tags>
+
+    <dependencies>
+      <group targetFramework="net4.8">
+      </group>
+    </dependencies>
+
+    <references>
+      <group targetFramework="net48">
+        <reference file="PInvoke.Kernel.dll"/>
+      </group>
+    </references>
+  </metadata>
+  <files>
+    <file src="..\PInvoke.Kernel\bin\Release\PInvoke.Kernel.dll" target="lib\net48" />
+    <file src="..\PInvoke.Kernel\bin\Release\PInvoke.Kernel.dll" target="ref\net48" />
+    <file src=".\nexspherehub.png" target="images\" />
+    <file src=".\README.md" target="docs\" />
+  </files>
+</package>
